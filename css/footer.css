@@ -1,0 +1,115 @@
+/* Footer */
+#main-footer {
+  background: var(--subtertiary);
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.color-heading {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+#main-footer .footer-container h1 {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+#main-footer .footer-container > *:last-child {
+  border-top: 1px solid #484848;
+  grid-column: 1 / span 4; /*start from 1st column and span to 4 */
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  color: #333;
+  border: none;
+}
+
+#main-footer .footer-container input[type="email"]:focus {
+  outline: none;
+}
+
+#main-footer .footer-container input[type="email"]::placeholder {
+  color: #333;
+}
+
+#main-footer .footer-container .footer-btn {
+  border-top: 1px solid #484848;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+#main-footer .footer-container .footer-btn-secondary {
+  width: 120px;
+}
+
+#main-footer .footer-container .footer-btn:hover {
+  background-color: rgb(170, 16, 47);
+}
+
+/* Utilities */
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary) !important;
+}
+
+@media (max-width: 600px) {
+  /* Stack Grid Items */
+
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+    width: 75%;
+  }
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+
+  #main-footer .footer-container > *:first-child,
+  #main-footer .footer-container > *:nth-child(2) {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+}

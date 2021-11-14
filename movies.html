@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/menu-style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CinemaVin</title>
+</head>
+<body>
+   <!-- Header -->
+   <header class="header">
+    <div id="navbar" class="nav-bar top">
+      <ul class="header-list">
+        <li class="nav-group">
+              <a href="index.html">
+                <h1> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h1>
+               </a>
+        </li>
+        <li class="nav-group">
+          <ul class="list-items">
+              <li><a href="#home">What's on</a></li>
+              <li><a href="/movies.html">Movies</a></li>
+              
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">News</a></li>
+              <li>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Location</a>  
+              </li>
+              <li>
+                <a href="#" class="personal-account"><i class="fas fa-user"></i> Sign In</a>
+              </li>           
+          </ul>  
+        </li>
+        <li class="nav-group">
+          <ul class="search-burger-menu">
+            <li>
+              <form action="" class="search-form" id="form">
+                <input class="search-input" id="search" type="text" placeholder="Search...">
+                <button class="search-btn">Find</button>
+              </form>
+            </li>
+            <li>
+              <!-- Hamburger menu -->
+              <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                  <div>
+                    <div>
+                      <ul>
+                        <li>
+                          <a href="index.html">
+                            <h1> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h1>
+                           </a>
+                        </li>
+                        <li>
+                          <form action="" class="search-form" id="second-form">
+                            <input class="search-input" id="second-search" type="text" placeholder="Search...">
+                            <button class="search-btn">Find</button>
+                          </form>
+                        </li>
+                        <li>
+                          <a href="#" class="personal-account"><i class="fas fa-user"></i>Sign In</a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fas fa-map-marker-alt"></i>Location</a>
+                        </li>
+                        <li><a href="#home">What's on</a></li>
+                        <li><a href="/movies.html">Movies</a></li> 
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">News</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </li>
+          </ul>
+        </li>
+      </ul>  
+  </div>
+
+</header>
+<main id="main" class="movies-main">
+  <div class="container">
+  <!-- Movies -->
+  <div class="news-promos ">
+    <h2>Now on Screen</h2>
+  </div>
+  
+  <section class="movies" id="movies">  
+      <!-- Template movie -->
+    <!-- <div class="movie">
+      <img src="/image/booking-img.jpg" alt="">
+      <div class="movie-info">
+        <div>
+          <h3>A lot of different words for long naming</h3>
+        </div>
+        <div>
+          <a href="/booking.html" class="movie-btn-tkt outline">Get ticket</a>
+          
+            <i class="fas fa-info movie-btn-inf outline"></i>
+          
+        </div>
+      </div>
+      <div class="overview">
+        <i class="far fa-window-close fa-2x"></i>
+        <h3>Overview</h3>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odit sunt unde, id ullam quidem dolore mollitia enim est explicabo.
+      </div>
+    </div> -->
+  </section>
+</div>
+</main>
+<!-- Footer -->
+<footer id="main-footer" class="py-2">
+  <div class="footer-container">
+      <div>
+        
+          <h3> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et dolorem, nihil ullam quis
+            voluptatem natus! Earum, quibusdam? Esse, laboriosam?
+          </p>
+      </div>
+      <div>
+          <h3>Email Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form name="contact" method="POST" data-netlify='true'>
+              <input type="email" name="email" placeholder='Enter Email...'>
+              <a href="#" class="footer-btn  outline">Subscribe</a>
+              
+          </form>
+      </div>
+      <div>
+          <h3>Site Links</h3>
+          <ul class="list">
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div>
+          <h3>Join Our Club</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum.</p>
+          <a href="#" class="footer-btn footer-btn-secondary">Join Now</a>
+      </div>
+      <div>
+          <p>
+              Copyright &copy; 2021 All rights reserved
+          </p>
+      </div>
+  </div>
+</footer>
+  <script src="js/movies.js"></script>
+</body>
+</html>

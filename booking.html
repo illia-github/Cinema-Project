@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/awselect.css">
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="css/seat-booking.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+      <!-- Header -->
+   <header class="header">
+    <div id="navbar" class="nav-bar top">
+      <ul class="header-list">
+        <li class="nav-group">
+              <a href="index.html">
+                <h1> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h1>
+               </a>
+        </li>
+        <!-- Navigation -->
+        <li class="nav-group">
+          <ul class="list-items">
+              <li><a href="#home">What's on</a></li>
+              <li><a href="/movies.html">Movies</a></li>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">News</a></li>
+              <li>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Location</a>  
+              </li>
+              <li>
+                <a href="#" class="personal-account"><i class="fas fa-user"></i> Sign In</a>
+              </li>           
+          </ul>  
+        </li>
+        <li class="nav-group">
+          <ul class="search-burger-menu">
+            <li></li>
+            <li>
+              <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                  <div>
+                    <div>
+                      <ul>
+                        <li>
+                          <a href="index.html">
+                            <h1> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h1>
+                           </a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                          <a href="#" class="personal-account"><i class="fas fa-user"></i>Sign In</a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fas fa-map-marker-alt"></i>Location</a>
+                        </li>
+                        <li><a href="#home">What's on</a></li>
+                        <li><a href="/movies.html">Movies</a></li> 
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">News</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </li>
+          </ul>
+        </li>
+      </ul>  
+  </div>
+</header>
+    <div class="main-container">
+      <!-- <div class="alert fail">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Please pick: time, date and seats!
+      </div>
+      <div class="alert success">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Booked, Enjoy the movie
+      </div> -->
+        <section class="movie-section">
+      <div class="movie-info">
+          <h2 class="heading">Dune</h2>
+          <div class="row movie-row">
+            <div class="left-column">
+              <img src="./image/booking-img.jpg" alt="">
+            </div>
+            <div class="right-column">
+                <p class="dimension">2D</p>
+                <p class="screen-numb"><i class="fas fa-video"></i> Screen 7</p>
+                <div class="time">
+                  <i class="far fa-clock"></i> <select id="movie" data-placeholder="Pick a time" data-callback="my_callback">
+                    <option value="Pick a time">Pick a time</option>
+                    <option value="9">8:00pm - ($9)</option>
+                    <option value="10">9:40pm - ($10)</option>
+                    <option value="10">10:50pm - ($10)</option>
+                    <option value="8">11:40pm - ($8)</option>
+                  </select>
+                </div>
+                <div class="date">
+                <i class="far fa-calendar-alt"></i> 
+                <input type="text" id="datepicker" placeholder="Pick a date">
+                </div>
+              <div class="movie-container"></div>
+            </div>
+          </div>  
+      </div>
+      <div class="container">
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+        <div class="screen"></div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="tickets-total">
+          <div class="ticket-row">
+            <p class="text">Tickets</p>
+            <p id="count">0</p> 
+          </div>
+          <div class="ticket-row">
+            <p class="text">Total</p>
+            <p id="total">0</p>
+          </div>
+        </div>
+        <a class="btn nextBtn" href="/index.html">Next</a>
+      </div>
+    </section>
+  </div>
+  <footer id="main-footer" class="py-2">
+    <div class="footer-container">
+        <div>
+            <h3> <span class="color-heading"><i class="fas fa-film"></i> Cinema</span>Vin</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et dolorem, nihil ullam quis
+              voluptatem natus! Earum, quibusdam? Esse, laboriosam?
+              <!-- There’s something about watching visual storytelling on a big  screen -->
+            </p>
+        </div>
+        <div>
+            <h3>Email Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form name="contact" method="POST" data-netlify='true'>
+                <input type="email" name="email" placeholder='Enter Email...'>
+                <a href="#" class="btn  outline">Subscribe</a>
+            </form>
+        </div>
+        <div>
+            <h3>Site Links</h3>
+            <ul class="list">
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Join Our Club</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum.</p>
+            <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <div>
+            <p>
+                Copyright &copy; 2021 All rights reserved
+            </p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/awselect.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/booking.js"></script>
+  </body>
+</html>
